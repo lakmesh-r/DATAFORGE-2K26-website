@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DATA FORGE-2K26 | National Level Technical Symposium</title>
+<meta name="description" content="DATA FORGE-2K26 - National Level Technical Symposium on 27 October 2026, organised by the Department of CSBS, Er. Perumal Manimekalai College of Engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- 1. STICKY NAVIGATION -->
+<header class="nav">
+  <a href="#home" class="logo" aria-label="DATA FORGE-2K26 home">DATA<span>FORGE</span>-2K26</a>
+  <nav id="menu" aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#events">Events</a>
+    <a href="#timeline">Timeline</a><a href="#highlights">Highlights</a><a href="#contact">Contact</a>
+  </nav>
+  <button type="button" class="btn sm register-btn">Register Now</button>
+  <button type="button" class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+</header>
+
+<main>
+<!-- 2. HERO -->
+<section id="home" aria-label="DATA FORGE-2K26 introduction">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="sphere" aria-hidden="true"></div>
+  <div class="hero-in">
+    <p class="kick" style="--i:0">ER. PERUMAL MANIMEKALAI COLLEGE OF ENGINEERING
+      <small>AN AUTONOMOUS INSTITUTION</small>
+      DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEMS
+      <em>PRESENTS</em></p>
+    <h1 style="--i:1">DATA<span>FORGE</span>-2K26</h1>
+    <p class="type" style="--i:2">NATIONAL LEVEL TECHNICAL SYMPOSIUM</p>
+    <p class="tag" style="--i:3">IDEAS | SKILLS | INNOVATION | BEYOND LIMITS</p>
+    <ul class="meta" style="--i:4">
+      <li><span aria-hidden="true">&#128197;</span> <b>27 October 2026</b></li>
+      <li><span aria-hidden="true">&#128205;</span> PMC Tech Institution, West Block Auditorium</li>
+      <li><span aria-hidden="true">&#8377;</span> Registration fee: <b>&#8377;150</b><small>Refreshments and lunch included</small></li>
+    </ul>
+    <div id="countdown" role="timer" aria-label="Countdown to 27 October 2026" style="--i:5">
+      <div><b id="cd-d">00</b><small>Days</small></div><div><b id="cd-h">00</b><small>Hours</small></div>
+      <div><b id="cd-m">00</b><small>Minutes</small></div><div><b id="cd-s">00</b><small>Seconds</small></div>
+    </div>
+    <p id="cd-msg" role="status"></p>
+    <div class="cta" style="--i:6">
+      <a class="btn ghost" href="#events">Explore Events</a>
+      <button type="button" class="btn register-btn">Register Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ABOUT -->
+<section id="about">
+  <h2>ABOUT DATA FORGE-2K26</h2>
+  <p class="sub">DATA FORGE-2K26 is a national-level technical symposium organised by the Department of Computer Science and Business Systems. It brings students together to demonstrate technical knowledge, innovation, creativity, problem-solving and teamwork.</p>
+  <div class="grid g4">
+    <div class="card rv center"><div class="ico">&#128197;</div><h3><b data-count="7">7</b> Exciting Events</h3></div>
+    <div class="card rv center"><div class="ico">&#9881;&#65039;</div><h3>Technical Competitions</h3></div>
+    <div class="card rv center"><div class="ico">&#128161;</div><h3>Creative Challenges</h3></div>
+    <div class="card rv center"><div class="ico">&#128101;</div><h3>Networking with Peers</h3></div>
+  </div>
+</section>
+
+<!-- 4. EVENTS (cards are rendered by script.js from the EVENTS array) -->
+<section id="events">
+  <h2>EXPLORE THE EVENTS</h2>
+  <p class="sub">Choose your challenge. Showcase your skills. Forge your future.</p>
+  <div class="count" aria-live="polite"><b id="ev-count">7</b> EVENTS</div>
+  <div id="filters" class="filters" role="group" aria-label="Filter events by category">
+    <button type="button" class="on" data-f="all" aria-pressed="true">All Events</button>
+    <button type="button" data-f="Technical" aria-pressed="false">Technical</button>
+    <button type="button" data-f="Non-Technical" aria-pressed="false">Non-Technical</button>
+    <button type="button" data-f="Creative" aria-pressed="false">Creative</button>
+  </div>
+  <div id="ev-grid" class="grid g3"></div>
+</section>
+
+<!-- 5. TIMELINE (entries rendered by script.js from the SCHEDULE array) -->
+<section id="timeline">
+  <h2>THE DAY AT A GLANCE</h2>
+  <p class="sub">27 October 2026 &middot; PMC Tech Institution, West Block Auditorium</p>
+  <ol id="tl" class="tl"></ol>
+</section>
+
+<!-- 6. HIGHLIGHTS -->
+<section id="highlights">
+  <h2>MORE THAN JUST A COMPETITION</h2>
+  <p class="sub">Registration fee: &#8377;150 per participant.</p>
+  <div class="grid g4">
+    <div class="card rv center"><div class="ico">&#127942;</div><h3>Attractive Achievements</h3></div>
+    <div class="card rv center"><div class="ico">&#128220;</div><h3>Participation Certificate for All</h3></div>
+    <div class="card rv center"><div class="ico">&#127828;</div><h3>Refreshments and Lunch Included</h3></div>
+    <div class="card rv center"><div class="ico">&#129309;</div><h3>Networking with Peers</h3></div>
+  </div>
+</section>
+
+<!-- 7. REGISTRATION -->
+<section id="register">
+  <div class="card reg rv">
+    <h2>READY TO FORGE YOUR FUTURE?</h2>
+    <p class="regname">DATA FORGE-2K26</p>
+    <ul class="meta">
+      <li>&#128197; 27 October 2026</li>
+      <li>&#128205; PMC Tech Institution, West Block Auditorium</li>
+      <li>&#8377; Registration fee: &#8377;150 per participant</li>
+      <li>&#127869;&#65039; Refreshments and lunch included</li>
+    </ul>
+    <button type="button" class="btn big register-btn">REGISTER NOW &mdash; &#8377;150</button>
+    <!-- OPTIONAL OFFICIAL QR CODE: only if you have the real QR image, add it here, e.g.
+         <img src="registration-qr.png" alt="QR code for the official DATA FORGE-2K26 registration form" width="160" height="160">
+         Never use a made-up QR code. -->
+  </div>
+</section>
+
+<!-- 8. COORDINATORS -->
+<section id="coordinators">
+  <h2>MEET THE COORDINATORS</h2>
+  <div class="grid g3 coord">
+    <div class="card rv"><div class="ico">&#127891;</div><h3>Faculty Co-Coordinators</h3>
+      <p><b>Mrs. Bhagyalakshmi V</b><br>API / CSBS<br><a href="tel:+917483435523">7483435523</a></p>
+      <p><b>Ms. R. Deepa</b><br>API / CSBS<br><a href="tel:+918939120118">8939120118</a></p></div>
+    <div class="card rv"><div class="ico">&#127970;</div><h3>Head of Department</h3>
+      <p><b>Mrs. M. Dukitha</b><br>HOD / CSBS</p></div>
+    <div class="card rv"><div class="ico">&#128105;&#8205;&#128187;</div><h3>Student Co-Coordinators</h3>
+      <p><b>Mr. Kaucikan G</b><br><a href="tel:+919952720372">9952720372</a></p>
+      <p><b>Ms. Parameshwari S</b><br><a href="tel:+918248677344">8248677344</a></p></div>
+  </div>
+  <p class="sub org">Overall Student Coordinators: Kaucikan G and Sahana A &mdash; 4th Year.<br>Co-Coordinators: Jansi, Siva and 2nd Year.</p>
+</section>
+
+<!-- 9. CONTACT -->
+<section id="contact">
+  <h2>GET IN TOUCH</h2>
+  <div class="card rv contact">
+    <p><b>Er. Perumal Manimekalai College of Engineering</b><br>Department of Computer Science and Business Systems</p>
+    <p>&#128205; PMC Tech Institution, West Block Auditorium<br>&#128197; 27 October 2026</p>
+    <p>&#128222; <a href="tel:+917483435523">7483435523</a> &middot; <a href="tel:+918939120118">8939120118</a> &middot; <a href="tel:+919952720372">9952720372</a> &middot; <a href="tel:+918248677344">8248677344</a></p>
+    <!-- SOCIAL LINKS: add only real, official URLs here. None have been supplied yet. -->
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div><p class="logo">DATA<span>FORGE</span>-2K26</p><p class="mut">National Level Technical Symposium<br>IDEAS | SKILLS | INNOVATION | BEYOND LIMITS</p></div>
+    <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#events">Events</a><a href="#timeline">Timeline</a><a href="#highlights">Highlights</a><a href="#contact">Contact</a></nav>
+    <button type="button" class="btn sm register-btn">Register Now</button>
+  </div>
+  <p class="copy">&copy; 2026 DATA FORGE-2K26. All Rights Reserved. <a class="top" href="#home" aria-label="Back to top">&uarr; Back to Top</a></p>
+</footer>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
