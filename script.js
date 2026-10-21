@@ -2,7 +2,7 @@
 
 /* ---------- EASY-TO-EDIT CONFIG ---------- */
 // Replace with the official Google Form link before publishing.
-const GOOGLE_FORM_URL = "YOUR_GOOGLE_FORM_URL";
+const GOOGLE_FORM_URL = "https://forms.gle/ZC7jbax8YS8VXK1z5";
 // Event local time: Asia/Kolkata (UTC+05:30)
 const EVENT_START = "2026-10-27T08:45:00+05:30"; // registration opens
 const EVENT_END   = "2026-10-27T16:15:00+05:30"; // vote of thanks ends
